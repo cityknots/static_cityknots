@@ -1,0 +1,56 @@
+// Dependencies
+@import "dependencies/normalize/normalize.scss";
+
+// ------- Project ------- //
+@import "base/typography.scss";
+@import "variables";
+
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #E0E0E0;
+  color: #828282;
+  font-size: 16px;
+  padding: 55px 0 50px;
+}
+
+// Containers
+.container {
+  max-width: 1200px;
+  margin: 0 20px;
+}
+
+// Links
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover,&.active {
+    color: #40bfad;
+  }
+}
+
+// Lists
+ul,li {
+  list-style: none;
+}
+
+// Headings
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 400;
+}
+
+// Spacing
+hr {
+  border-top: 1px solid rgba(0,0,0,.1);
+  border-bottom: 0;
+}
+
+
+// Sections
+@import "./sections/_navbar.scss";
+@import "./sections/_carousel.scss";
+@import "./sections/_experience.scss";
+@import "./sections/_bucket.scss";
+@import "./sections/_slider.scss";
+@import "./sections/_profile.scss";
+@import "./sections/_modals.scss";
